@@ -8,7 +8,7 @@ const app=express();
 const PORT=process.env.PORT||5000
 
 const corsOptions = {
-  origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173',
+ origin: ['http://localhost:5173', 'https://product-store-1-p9yy.onrender.com/'],
 };
 const __dirname = path.resolve()
 app.use(express.json())
