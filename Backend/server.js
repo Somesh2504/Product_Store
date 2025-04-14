@@ -8,13 +8,13 @@ const app=express();
 const PORT=process.env.PORT||5000
 
 const corsOptions = {
-    origin: '*',
+ origin: ['http://localhost:5173', 'https://product-store-1-p9yy.onrender.com/'],
 };
 const __dirname = path.resolve()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors(corsOptions));
-
+dotenv.config();
 app.use('/api/products',productRoute)
 console.log(process.env.NODE_ENV)
 if(process.env.NODE_ENV==="production"){
