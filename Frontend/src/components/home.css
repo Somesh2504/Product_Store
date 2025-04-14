@@ -1,0 +1,126 @@
+/* Home container */
+.home {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  /* Card container */
+  .productCard {
+    background-color: #0a0b0c;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    height: auto; /* Let the card height adjust based on content */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure buttons stay at the bottom */
+  }
+  
+  /* Hover effect for cards */
+  .productCard:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+  }
+  
+  /* Image styling */
+  .image {
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-radius: 8px;
+  }
+  
+  /* Product name styling */
+  .info h1 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .info{
+     display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: space-between;
+   padding: 0px 20px;
+  }
+  /* Button container */
+  .changes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0px 20px;
+  }
+  
+  /* Button styles */
+  .changes button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .changes button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* Modal overlay to cover full screen */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* dimmed background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal form */
+  .update-modal {
+    background-color: #1a1b1c;
+    padding: 25px;
+    border-radius: 12px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  /* Modal buttons */
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .modal-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .modal-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
