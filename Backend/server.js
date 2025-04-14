@@ -13,7 +13,7 @@ const corsOptions = {
 const __dirname = path.resolve()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
-app.use(cors(corsOptions));
+app.use(cors());
 dotenv.config();
 app.use('/api/products',productRoute)
 console.log(process.env.NODE_ENV)
